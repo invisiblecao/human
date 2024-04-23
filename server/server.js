@@ -13,7 +13,7 @@ const human = new Human({
     face: {
         enabled: true, detector: {
             rotation: true,
-            maxDetected: 5  // Example: set to detect up to 5 faces
+            maxDetected: 10  // Example: set to detect up to 5 faces
         }
     },
     body: { enabled: false },
