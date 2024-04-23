@@ -10,7 +10,12 @@ const port = 3000;
 const human = new Human({
     backend: 'tensorflow',
     modelBasePath: 'file:///Users/caokepan/Desktop/human/models',  // Update this path
-    face: { enabled: true, detector: { rotation: true } },
+    face: {
+        enabled: true, detector: {
+            rotation: true,
+            maxDetected: 10  // Example: set to detect up to 5 faces
+        }
+    },
     body: { enabled: false },
     hand: { enabled: false }
 });
